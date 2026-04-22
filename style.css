@@ -26,13 +26,12 @@ h1 {
 }
 
 /* Card Areas */
-.card-area {
-    height: 130px;
+.card-area, #dealer-cards, #player-cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allows cards to drop to next line if screen is tiny */
     gap: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-top: 10px;
 }
 
 /* Individual Card Styling */
