@@ -1,3 +1,5 @@
+alert("The game logic is loading!");
+
 let deck = [];
 let dealerSum = 0;
 let playerSum = 0;
