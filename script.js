@@ -1,4 +1,5 @@
-alert("The game logic is loading!");
+console.log("JS is connected!");
+alert("If you see this, the game is working!");
 
 let deck = [];
 let dealerSum = 0;
