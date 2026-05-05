@@ -1,5 +1,11 @@
-const canvas = document.getElementById('gameCanvas');
-const ctx = canvas.getContext('2d');
+window.addEventListener('load', () => {
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    // ... move all your existing variables and functions inside here ...
+
+    requestAnimationFrame(update);
+});
 
 const resolution = 10; // Size of each cell in pixels
 canvas.width = window.innerWidth;
