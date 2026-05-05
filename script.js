@@ -63,14 +63,12 @@ function nextGeneration(grid) {
 
 function draw(grid) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#00ff00'; // Set color once
     for (let col = 0; col < grid.length; col++) {
         for (let row = 0; row < grid[col].length; row++) {
-            const cell = grid[col][row];
-
-            ctx.beginPath();
-            ctx.rect(col * resolution, row * resolution, resolution, resolution);
-            ctx.fillStyle = cell ? '#00ff00' : '#000'; // Matrix green for alive cells
-            ctx.fill();
+            if (grid[col][row] === 1) { // Only draw if alive
+                ctx.fillRect(col * resolution, row * resolution, resolution, resolution);
+            }
         }
     }
 }
