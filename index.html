@@ -8,11 +8,27 @@
 </head>
 <body>
     <canvas id="gameCanvas"></canvas>
-    
+
+    <!-- Header -->
     <div class="content">
-        <h1>Penglertaha</h1>
-        <p>A cellular automaton experiment.</p>
+        <div class="title-block">
+            <h1>Penglertaha</h1>
+            <p>A cellular automaton experiment.</p>
+        </div>
+        <span class="status paused" id="status">Draw mode</span>
     </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button class="btn" id="startBtn">▶ Start</button>
+        <button class="btn btn-reset" id="resetBtn">↺ Reset</button>
+    </div>
+
+    <!-- Keyboard hints -->
+    <div class="hints">Space = play/pause &nbsp;·&nbsp; R = reset &nbsp;·&nbsp; Click/drag = draw</div>
+
+    <!-- Transient message overlay -->
+    <div id="message"></div>
 
     <script src="script.js"></script>
 </body>
